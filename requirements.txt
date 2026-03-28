@@ -1,0 +1,51 @@
+# ============================================================
+# NSE AI Stock Analysis System - Requirements
+# ============================================================
+
+# Core Data & ML
+numpy==1.26.4
+pandas==2.2.2
+scikit-learn==1.4.2
+scipy==1.13.0
+
+# Deep Learning
+torch==2.3.0
+torchvision==0.18.0
+
+# HuggingFace / NLP
+transformers==4.41.2
+tokenizers==0.19.1
+datasets==2.19.0
+sentencepiece==0.2.0
+
+# Financial Data
+yfinance==0.2.40
+pandas-ta==0.3.14b
+ta==0.11.0
+
+# API
+fastapi==0.111.0
+uvicorn[standard]==0.30.1
+pydantic==2.7.1
+python-multipart==0.0.9
+
+# Notebook
+jupyter==1.0.0
+ipykernel==6.29.4
+nbformat==5.10.4
+
+# Visualization
+matplotlib==3.9.0
+seaborn==0.13.2
+plotly==5.22.0
+
+# Utilities
+pyyaml==6.0.1
+python-dotenv==1.0.1
+tqdm==4.66.4
+joblib==1.4.2
+requests==2.32.2
+httpx==0.27.0
+
+# Serialization
+h5py==3.11.0

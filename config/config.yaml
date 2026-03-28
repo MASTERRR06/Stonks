@@ -1,0 +1,54 @@
+# ============================================================
+# NSE AI Stock Analysis System - Configuration
+# ============================================================
+
+data:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  window_size: 60          # sliding window for LSTM
+  test_split: 0.2
+  default_ticker: "RELIANCE.NS"
+  default_period: "2y"
+  default_interval: "1d"
+
+model:
+  lstm_path: "models/saved_models/lstm_model.pt"
+  scaler_path: "models/saved_models/scaler.pkl"
+  processed_data_path: "data/processed/processed_stock_data.csv"
+  sentiment_output_path: "data/processed/sentiment_output.csv"
+  finbert_model_name: "ProsusAI/finbert"
+  input_size: 10           # number of features fed to LSTM
+  hidden_size: 128
+  num_layers: 2
+  output_size: 1
+  dropout: 0.2
+
+training:
+  epochs: 50
+  batch_size: 32
+  learning_rate: 0.001
+  patience: 10             # early stopping
+
+signals:
+  volume_spike_threshold: 2.0    # 2x average volume
+  price_breakout_pct: 0.03       # 3% above resistance
+  sentiment_positive_threshold: 0.6
+  sentiment_negative_threshold: 0.4
+
+patterns:
+  support_resistance_window: 20
+  breakout_confirmation_bars: 2
+  trend_reversal_rsi_oversold: 30
+  trend_reversal_rsi_overbought: 70
+
+api:
+  host: "0.0.0.0"
+  port: 8000
+  debug: false
+  reload: false
+  title: "NSE AI Stock Analysis API"
+  version: "1.0.0"
+
+logging:
+  level: "INFO"
+  format: "%(asctime)s | %(levelname)s | %(name)s | %(message)s"

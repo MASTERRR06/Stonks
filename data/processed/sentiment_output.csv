@@ -1,0 +1,9 @@
+text,label,score,confidence,probabilities
+Reliance Industries reports record quarterly profit,positive,1.0,0.7534,"{'positive': 0.7534, 'negative': 0.1807, 'neutral': 0.0659}"
+HDFC Bank faces regulatory scrutiny over lending practices,negative,-1.0,0.8581,"{'positive': 0.0159, 'negative': 0.8581, 'neutral': 0.1259}"
+Infosys wins $1.5 billion deal with European client,positive,1.0,0.7558,"{'positive': 0.7558, 'negative': 0.0348, 'neutral': 0.2094}"
+Nifty50 crashes 3% amid global sell-off concerns,negative,-1.0,0.9493,"{'positive': 0.0353, 'negative': 0.9493, 'neutral': 0.0154}"
+TCS Q3 results beat analyst expectations on margin expansion,positive,1.0,0.9543,"{'positive': 0.9543, 'negative': 0.0229, 'neutral': 0.0228}"
+Adani Group stocks fall sharply after short-seller report,negative,-1.0,0.9673,"{'positive': 0.0116, 'negative': 0.9673, 'neutral': 0.021}"
+"RBI keeps repo rate unchanged, signals accommodative stance",neutral,0.0,0.7361,"{'positive': 0.1615, 'negative': 0.1025, 'neutral': 0.7361}"
+Wipro announces major share buyback programme,neutral,0.0,0.7467,"{'positive': 0.191, 'negative': 0.0623, 'neutral': 0.7467}"
